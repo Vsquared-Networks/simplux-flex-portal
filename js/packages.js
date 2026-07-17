@@ -4,36 +4,28 @@ var packageData = [
     name: 'Hourly',
     duration: '1 Hour',
     speed: 'Unlimited',
-    price: 50,
-    description: 'Perfect for quick tasks, browsing, and light streaming.',
-    popular: false
+    price: 50
   },
   {
     id: 'six-hours',
     name: 'Flex 6',
     duration: '6 Hours',
     speed: 'Unlimited',
-    price: 200,
-    description: 'Ideal for a work shift, study session, or movie marathon.',
-    popular: true
+    price: 200
   },
   {
     id: 'daily',
     name: 'Daily',
     duration: '1 Day',
     speed: 'Unlimited',
-    price: 350,
-    description: 'Great for full-day browsing, streaming, and video calls.',
-    popular: false
+    price: 350
   },
   {
     id: 'weekly',
     name: 'Weekly',
     duration: '7 Days',
     speed: 'Unlimited',
-    price: 1000,
-    description: 'Best value for a full week of unlimited connectivity.',
-    popular: false
+    price: 1000
   }
 ];
 
@@ -52,15 +44,10 @@ function renderPackages() {
 }
 
 function createPackageCard(pkg) {
-  var popularBadge = pkg.popular
-    ? '<span class="package-card-badge">Popular</span>'
-    : '';
-
   var selectedClass = selectedPackageId === pkg.id ? ' package-card--selected' : '';
 
   return (
     '<div class="package-card' + selectedClass + '" data-package-id="' + pkg.id + '" role="button" tabindex="0" aria-label="Select ' + pkg.name + ' package">' +
-      popularBadge +
       '<div class="package-card-header">' +
         '<h3 class="package-card-name">' + pkg.name + '</h3>' +
         '<span class="package-card-duration">' + pkg.duration + '</span>' +
@@ -72,9 +59,8 @@ function createPackageCard(pkg) {
         '<span class="package-card-currency">KSh</span>' +
         '<span class="package-card-amount">' + pkg.price.toLocaleString() + '</span>' +
       '</div>' +
-      '<p class="package-card-description">' + pkg.description + '</p>' +
       '<button class="btn btn-primary package-card-btn" data-package-id="' + pkg.id + '">' +
-        'Buy Now' +
+        'Buy Package' +
       '</button>' +
     '</div>'
   );

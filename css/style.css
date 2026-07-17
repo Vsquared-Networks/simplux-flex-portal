@@ -175,7 +175,7 @@ ul {
 }
 
 .logo-img {
-  height: 4rem;
+  height: 3rem;
   width: auto;
 }
 
@@ -350,20 +350,6 @@ ul {
   box-shadow: 0 0 0 2px var(--color-accent), var(--shadow-lg);
 }
 
-.package-card-badge {
-  position: absolute;
-  top: var(--spacing-sm);
-  left: var(--spacing-sm);
-  padding: 0.2rem 0.75rem;
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-  font-size: 0.625rem;
-  font-weight: var(--fw-semibold);
-  border-radius: var(--radius-full);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
 .package-card-header {
   margin-bottom: var(--spacing-md);
 }
@@ -414,14 +400,6 @@ ul {
   color: var(--color-text-primary);
   letter-spacing: -0.03em;
   line-height: 1;
-}
-
-.package-card-description {
-  font-size: var(--fs-sm);
-  color: var(--color-text-secondary);
-  line-height: var(--lh-relaxed);
-  margin-bottom: var(--spacing-md);
-  flex: 1;
 }
 
 .package-card-btn {
