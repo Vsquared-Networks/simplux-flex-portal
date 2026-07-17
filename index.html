@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VSquared Networks - Fast Internet. Instant Connection.">
+  <meta name="theme-color" content="#391C51">
+
+  <title>VSquared Networks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="VSquared Networks Home">
+        <span class="logo-icon" aria-hidden="true">VN</span>
+        VSquared<span style="color: var(--color-accent);">Networks</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#packages" class="btn btn-outline">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Hero section">
+      <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--3" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <img src="assets/images/join-the-network-yellow-outline@2x.png" alt="Join the Network" class="hero-headline-image animate-on-view">
+
+        <p class="hero-description animate-on-view">
+          Flex internet packages starting from KSh 50. Pay as you go, no contracts.
+        </p>
+
+        <div class="hero-actions animate-on-view">
+          <a href="#packages" class="btn btn-primary btn-lg">
+            View Packages
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="packages" aria-labelledby="packages-title">
+      <div class="container">
+        <div class="section-header animate-on-view">
+          <span class="section-label">Flex Packages</span>
+          <h2 class="section-title" id="packages-title">Choose Your Perfect Plan</h2>
+          <p class="section-subtitle">Select a package that fits your needs. Flexible durations for every lifestyle.</p>
+        </div>
+        <div class="packages-grid" id="packages-grid" role="radiogroup" aria-label="Available internet packages">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="checkout" aria-labelledby="checkout-title">
+      <div class="container">
+        <div class="section-header animate-on-view">
+          <span class="section-label">Checkout</span>
+          <h2 class="section-title" id="checkout-title">Complete Your Order</h2>
+        </div>
+        <div class="checkout-summary checkout-summary--hidden" id="checkout-summary">
+          <div class="checkout-layout">
+            <div class="checkout-content" id="checkout-content-data">
+            </div>
+            <div class="checkout-form">
+              <label for="checkout-phone" class="checkout-label">M-Pesa Phone Number</label>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  id="checkout-phone"
+                  class="input"
+                  placeholder="e.g. 0712345678"
+                  autocomplete="tel"
+                  aria-describedby="checkout-phone-error"
+                  aria-invalid="false"
+                >
+              </div>
+              <p class="input-error" id="checkout-phone-error" role="alert"></p>
+              <button class="btn btn-primary btn-lg checkout-pay-btn" id="checkout-pay-btn" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Pay with M-Pesa
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-summary checkout-summary--empty" id="checkout-empty">
+          <div class="checkout-empty-state">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="checkout-empty-icon"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <p class="checkout-empty-text">Select a package above to get started</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section section--alt" id="support" aria-labelledby="support-title">
+      <div class="container">
+        <div class="section-header section-header--center animate-on-view">
+          <span class="section-label">Support</span>
+          <h2 class="section-title" id="support-title">We're Here to Help</h2>
+          <p class="section-subtitle">Reach out to us anytime. Our team is ready to assist you.</p>
+        </div>
+        <div class="support-grid">
+          <a href="https://wa.me/254700000000" target="_blank" rel="noopener noreferrer" class="support-card animate-on-view" aria-label="Contact us on WhatsApp">
+            <div class="support-card-icon support-card-icon--whatsapp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3 class="support-card-title">WhatsApp</h3>
+            <p class="support-card-text">Chat with us instantly on WhatsApp</p>
+            <span class="support-card-action">Send Message</span>
+          </a>
+          <a href="tel:+254700000000" class="support-card animate-on-view" aria-label="Call us">
+            <div class="support-card-icon support-card-icon--call">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="support-card-title">Call Us</h3>
+            <p class="support-card-text">Speak directly with our support team</p>
+            <span class="support-card-action">+254 700 000 000</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> VSquared Networks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="payment-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" aria-hidden="true"></div>
+    <div class="modal-panel">
+      <div class="modal-body" id="modal-body">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/packages.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>
