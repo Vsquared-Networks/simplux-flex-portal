@@ -164,31 +164,19 @@ ul {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  font-family: var(--font-heading);
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
-  color: var(--color-primary);
+  line-height: 0;
 }
 
-.logo-icon {
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-bold);
+.logo-img {
+  height: 4rem;
+  width: auto;
 }
 
 .hero {
